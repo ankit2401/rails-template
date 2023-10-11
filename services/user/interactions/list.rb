@@ -1,9 +1,8 @@
 class List < Interaction
 
   def execute
-    data = 'Hello world!...'
+    data = Test.first.as_json.deep_symbolize_keys
 
     return data 
   end
-
 end
